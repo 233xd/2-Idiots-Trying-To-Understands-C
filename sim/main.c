@@ -28,9 +28,9 @@ struct Student
 
 vec2s classroomVerticies[] = {
 	{0, 0},
-	{791, 0},
-	{791, 928},
-	{0, 928},
+	{1296, 0},
+	{1296, 1298},
+	{0, 1298},
 };
 
 void renderRoom(vec2s* verticies, int numVerticies, GLTvertexStore roomVs, GLuint polyShader)
@@ -276,10 +276,10 @@ int main()
 
 	vtVec(struct Table) tables = vtInit(struct Table, 2);
 	tables[0].verticies = vtInit(vec2s, 4);
-	tables[0].verticies[0] = (vec2s){155, 150};
-	tables[0].verticies[1] = (vec2s){155, 350};
-	tables[0].verticies[2] = (vec2s){205, 350};
-	tables[0].verticies[3] = (vec2s){205, 150};
+	tables[0].verticies[0] = (vec2s){548, 449};
+	tables[0].verticies[1] = (vec2s){548, 649};
+	tables[0].verticies[2] = (vec2s){648, 649};
+	tables[0].verticies[3] = (vec2s){648, 449};
 	tables[1].verticies = vtInit(vec2s, 4);
 	tables[1].verticies[0] = (vec2s){275, 150};
 	tables[1].verticies[1] = (vec2s){275, 350};
